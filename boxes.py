@@ -96,7 +96,7 @@ while True:
         new_product = Product(name, box)
 
         print("{} is being added".format(name))
-        time.sleep(1)
+        time.sleep(0.2)
         inventory.add_product(new_product)
         print("{} added".format(name))
 
@@ -104,7 +104,7 @@ while True:
         name = input("Enter item name: ")
 
         print("{} is being removed\n".format(name))
-        time.sleep(1)
+        time.sleep(0.2)
         inventory.remove_product(name)
         print("{} removed\n".format(name))
 
@@ -119,14 +119,14 @@ while True:
         new_product = Product(name, box)
 
         print("Updating {}\n".format(name))
-        time.sleep(1)
+        time.sleep(0.2)
         inventory.update_product(new_product)
         print("{} has been updated\n".format(name))
 
     elif int(choice) == 5:
         name = input("Enter item to search: ") 
         print("Looking for {} in the database\n".format(name))
-        time.sleep(1)
+        time.sleep(0.2)
         inventory.search_product(name)
         
     elif int(choice) == 6:
