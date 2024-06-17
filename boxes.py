@@ -43,7 +43,7 @@ class inventory():
         rows = self.cursor.fetchall()
         if rows: 
             for row in rows:
-                print("Item Name: {}\t\tBox: {} \n".format(row[0],row[1]))
+                print("Item Name: {}\tBox: {} \n".format(row[0],row[1]))
         else:
             print("No match")
     
